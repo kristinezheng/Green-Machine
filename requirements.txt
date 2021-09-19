@@ -1,0 +1,7 @@
+easygui
+pandas 
+numpy 
+matplotlib
+datetime
+requests
+regex 
