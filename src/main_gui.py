@@ -7,7 +7,7 @@ import shower_cost as sc
 # title page:
 cont_app = True
 title0 = "Welcome to the Green Machine"
-img0 = "../img/shower.jpg"
+img0 = "../img/cover.png"
 msg0 = "Pick an action to begin!"
 
 #check if continue or something else
@@ -28,7 +28,7 @@ while cont_app:
     start_time = None
     msg1 = "Click to start recording time!"
     shower_cont = True
-    img1 = "../img/shower.jpg"
+    img1 = "../img/shower.png"
 
     start = eg.buttonbox(msg1, image = img1, title = title1, choices=["Start Shower"])
     if start:
@@ -59,7 +59,9 @@ while cont_app:
     elec_msg = "The price for electricity is $0.22 per kWh"
     eg.msgbox(elec_msg)
   
-  #elif pick_btn == "Leaderboard":
+  elif pick_btn == "Leaderboard":
+    lb_msg = "Will be implemented soon :) "
+    eg.msgbox(lb_msg)
 
   elif pick_btn == "Exit":
     sys.exit(0)
