@@ -1,5 +1,5 @@
 # Green-Machine
-HackMIT 2021: Sustainability Track
+HackMIT 2021: Sustainability Track with Duha Syar, Pamela Stark, and Kristine Zheng
 
 This GUI will measure shower time and cost and inform about other sustainability measures. 
 
