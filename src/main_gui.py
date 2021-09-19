@@ -7,7 +7,7 @@ import shower_cost as sc
 # title page:
 cont_app = True
 title0 = "Welcome to the Green Machine"
-img0 = "shower.jpg"
+img0 = "../img/shower.jpg"
 msg0 = "Pick an action to begin!"
 
 #check if continue or something else
@@ -28,7 +28,7 @@ while cont_app:
     start_time = None
     msg1 = "Click to start recording time!"
     shower_cont = True
-    img1 = "shower.jpg"
+    img1 = "../img/shower.jpg"
 
     start = eg.buttonbox(msg1, image = img1, title = title1, choices=["Start Shower"])
     if start:
@@ -41,7 +41,7 @@ while cont_app:
         end_time = time.mktime(time.localtime())
 
     duration = end_time - start_time
-    dur_msg = "Your Shower was "+ str(duration/60000) + " minutes long and cost " + str(duration*current_price)
+    dur_msg = "Your Shower was "+ str(duration/60000) + " minutes long and cost $" + str(duration/60000*0.5*current_price/100) + " per kWh"
 
     eg.msgbox(dur_msg)
     
@@ -51,9 +51,16 @@ while cont_app:
     #hot_cold = eg.choicebox(temp_msg, choices = [1,2,3,4,5,6,7,8,9,10])
     
 
-    #elif pick_btn == "Lights":
-    #elif pick_btn == "Electricity":
-    #elif pick_btn == "Leaderboard":
+  elif pick_btn == "Lights":
+    lights_msg = "The price for having a light on is $0.001 per kwh/min"
+    eg.msgbox(lights_msg)
+
+  elif pick_btn == "Electricity":
+    elec_msg = "The price for electricity is $0.22 per kWh"
+    eg.msgbox(elec_msg)
+  
+  #elif pick_btn == "Leaderboard":
+
   elif pick_btn == "Exit":
     sys.exit(0)
 
